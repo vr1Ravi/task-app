@@ -1,6 +1,11 @@
 package com.vr1dev.task.repository;
 
+import com.vr1dev.task.domain.entity.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface TaskRepository extends JpaRepository {
+import java.util.UUID;
+
+@Repository
+public interface TaskRepository extends JpaRepository<Task, UUID> {
 }
