@@ -20,6 +20,6 @@ public class GlobalExceptionHandler {
                 .orElse("Validation Failed.");
         ErrorDto errorDto = new ErrorDto(errorMessage);
         return  new ResponseEntity<>(errorDto, HttpStatus.BAD_REQUEST);
-
     }
+
 }
